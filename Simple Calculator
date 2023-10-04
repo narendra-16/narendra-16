@@ -1,0 +1,49 @@
+// program of simple calculator
+
+#include<iostream>
+using namespace std;
+int add (int a,int b){
+return a+b;
+}
+int sub (int a,int b){
+return a-b;
+}
+int multi (int a,int b){
+return a*b;
+}
+int div (int a,int b){
+return a/b;
+}
+
+int main (){
+int a,b;
+cout<<"Enter values of a and b\n";
+cin>>a>>b;
+char op;
+cout<<"Enter operator\n";
+cin>>op;
+
+switch(op){
+	
+case '+':add(a,b);	
+		 cout<<a+b;	
+		 break;
+	
+case '-':	sub(a,b);
+			cout<<a-b;
+			break;
+
+case '*':	multi(a,b);
+			cout<<a*b;
+			break;
+
+case '/':	div(a,b);
+			cout<<a/b;
+			break;
+
+default:
+		cout<<"Wrong operation";
+		break;
+}
+return 0;
+}
